@@ -1,0 +1,22 @@
+
+# WEEK 1 ANALYSIS SUMMARY
+Generated: 2026-05-27 17:04:34
+
+## Data Overview
+- Total samples: 100
+- Total bacteria: 50
+- Shannon diversity (mean ± std): 5.64 ± 0.00
+- Simpson diversity (mean ± std): 0.98 ± 0.00
+
+## Top 5 Most Abundant Bacteria
+Bacteria_42    202.65
+Bacteria_39    202.10
+Bacteria_25    201.86
+Bacteria_7     201.78
+Bacteria_32    201.77
+
+## Plots Generated
+1. 01_diversity_distribution.png
+
+## Status
+✅ Week 1 analysis complete!
