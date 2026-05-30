@@ -130,24 +130,24 @@ jupyter lab
 
 ## 📝 Key Analyses Performed
 
-### Week 1: Exploratory Data Analysis
+### Phase 1: Exploratory Data Analysis
 - **Alpha Diversity**: Shannon & Simpson indices
 - **Beta Diversity**: Bray-Curtis distances (planned Week 2)
 - **Taxonomic Profiling**: Top 10 taxa by abundance
 - **Descriptive Statistics**: Sample counts, missing values, distributions
 
-### Weeks 2–3: Feature Engineering
+### Phases 2–3: Feature Engineering
 - Relative abundance normalization
 - Log transformation
 - Feature selection (top 50 taxa)
 - Disease group comparison (statistical tests)
 
-### Weeks 4–5: Predictive Modeling
+### Phases 4–5: Predictive Modeling
 - **Model**: Random Forest Classifier
 - **Evaluation**: 5-fold cross-validation, AUC-ROC, confusion matrix
 - **Interpretation**: Feature importance (which bacteria predict disease?)
 
-### Weeks 6–7: Dashboarding
+### Phases 6–7: Dashboarding
 - **KPI Cards**: Model accuracy, sample count, diversity metrics
 - **Interactive Slicers**: Filter by disease, age group, diversity level
 - **Drill-Through**: Click a sample → see detailed microbiome profile
