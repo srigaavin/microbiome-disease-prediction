@@ -190,9 +190,9 @@ jupyter lab
 
 ## 👨‍💻 Author & Contact
 
-**Student**: Computational Biology, SRM University
-**Project Date**: May–August 2026
-**Repository**: https://github.com/[YOUR-USERNAME]/microbiome-disease-prediction
+**Student**: Srigaavin R.K. B.Tech Biotechnology(Computational Biology), SRM University
+**Project Date**: May-June 2026
+**Repository**: https://github.com/srigaavin/microbiome-disease-prediction
 
 ---
 
@@ -209,5 +209,5 @@ jupyter lab
 
 ---
 
-**Last Updated**: May 26, 2026
-**Status**: 🟡 Week 1 in progress
+**Last Updated**: May 30, 2026
+**Status**: 🟡 Phase 3 in progress
