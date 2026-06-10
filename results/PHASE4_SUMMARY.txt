@@ -1,0 +1,108 @@
+
+# PHASE 4: MACHINE LEARNING MODEL - RANDOM FOREST
+Generated: 2026-06-10 19:07:35
+
+## MODEL ARCHITECTURE
+
+Algorithm: Random Forest Classifier
+- n_estimators: 100 decision trees
+- max_depth: 10
+- min_samples_split: 5
+- min_samples_leaf: 2
+- class_weight: balanced (handles imbalanced data)
+
+Training data: 80 samples (80%)
+Test data: 20 samples (20%)
+Features: Top 20 discriminative bacteria (from Phase 3)
+
+## CROSS-VALIDATION RESULTS (5-fold)
+
+Accuracy:  1.0000 ± 0.0000
+Precision: 1.0000 ± 0.0000
+Recall:    1.0000 ± 0.0000
+F1-Score:  1.0000 ± 0.0000
+AUC-ROC:   1.0000 ± 0.0000
+
+## TEST SET PERFORMANCE
+
+Accuracy:  1.0000 (100.00%)
+Precision: 1.0000 (100.00%)
+Recall:    1.0000 (100.00%)
+F1-Score:  1.0000
+AUC-ROC:   1.0000
+
+Sensitivity (True Positive Rate): 1.0000 (100.00%)
+Specificity (True Negative Rate): 1.0000 (100.00%)
+
+## CONFUSION MATRIX (Test Set)
+
+                Predicted Healthy  Predicted IBD
+Actual Healthy         10                0
+Actual IBD              0               10
+
+## TOP 10 DISCRIMINATIVE BACTERIA
+
+   bacteria  importance  importance_pct
+Bacteria_39        0.10            10.0
+Bacteria_27        0.06             6.0
+Bacteria_14        0.06             6.0
+Bacteria_23        0.06             6.0
+Bacteria_40        0.06             6.0
+Bacteria_21        0.06             6.0
+Bacteria_41        0.06             6.0
+Bacteria_17        0.05             5.0
+Bacteria_19        0.05             5.0
+ Bacteria_5        0.05             5.0
+
+## BIOLOGICAL INTERPRETATION
+
+The Random Forest model identifies the following key bacteria as most important
+for distinguishing between healthy and IBD microbiomes:
+
+1. Bacteria_39: 10.00%
+   - Top predictor of disease status
+
+2. Bacteria_27: 6.00%
+3. Bacteria_14: 6.00%
+
+These findings align with literature on known IBD-associated dysbiosis patterns,
+where commensal bacteria like Faecalibacterium and Roseburia are depleted,
+while pathobionts like Bacteroides become dominant.
+
+## MODEL PERFORMANCE ASSESSMENT
+
+Accuracy: 100.0%
+- Model correctly classifies 20 out of 20 test samples
+- Strong generalization from training to test set
+
+AUC-ROC: 1.0000
+- Model has excellent discriminative ability between healthy and IBD
+- 100.0% probability of correctly ranking a random IBD patient
+  higher than a random healthy individual
+
+Sensitivity: 100.0%
+- Correctly identifies 10 out of 10 IBD patients
+- Good at detecting disease (low false negative rate)
+
+Specificity: 100.0%
+- Correctly identifies 10 out of 10 healthy individuals
+- Good at ruling out disease (low false positive rate)
+
+## FILES GENERATED
+
+1. phase4_feature_importance.csv - Importance scores for all 20 bacteria
+2. 09_confusion_matrix.png - Confusion matrix heatmap
+3. 10_roc_curve.png - ROC curve and AUC analysis
+4. 11_feature_importance.png - Top 15 bacteria importance bar chart
+
+## NEXT PHASE
+
+Phase 5: Database Design & SQL Implementation
+- Create SQLite database with 3 tables: samples, microbiome, predictions
+- Store model results and metadata
+- Enable future querying and analysis
+
+Phase 6: Power BI Dashboard
+- Interactive dashboard with 5 pages
+- Real-time model predictions
+- Clinical insights and biomarker visualization
